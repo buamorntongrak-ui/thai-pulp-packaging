@@ -1144,3 +1144,45 @@ p{
 .btn-blue:hover {
   background-color: #001f4a;
 }
+/* 🌐 ปรับหน้าจอสำหรับโทรศัพท์มือถือ */
+@media screen and (max-width: 768px) {
+  
+  /* โลโก้บริษัท */
+  .brand_logo {
+    width: 120px;
+    height: auto;
+  }
+
+  /* เมนูด้านบน */
+  .header_inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ปุ่มสลับภาษา */
+  .lang-switch {
+    margin-right: 10px;
+  }
+
+  /* ภาพใน hero section */
+  .heroImage_media img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* ตัวอักษรใน hero section */
+  .heroText h2 {
+    font-size: 1.5rem;
+  }
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  /* ปุ่ม ดูสินค้า / ติดต่อเรา */
+  .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
